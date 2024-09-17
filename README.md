@@ -1,2 +1,2 @@
 # Programming-fundamentals
-Notes and solutions of PF classes
+Notes and solutions of Programming Fundamentals lab classes.
