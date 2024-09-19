@@ -41,24 +41,15 @@ fornecido ao programa o inteiro $-1$. O seu programa deve permitir a interação
 
 
 def numero():
-    potencia = 0
-    expoente = 0
-    soma = ()
-    final = 0
-    valor = eval(input("Escreva um dígito\n(-1 para terminar)\n? "))
+    soma = 0
+    valor = 0
 
     while (valor >= 0 and valor != -1):
-        soma += (valor,)
-        potencia += 1
-        valor = eval(input("Escreva um dígito\n(-1 para terminar)\n? "))
-
-
-    while (potencia > 0):
-        potencia -= 1
-        final += soma[potencia] * 10 ** expoente
-        expoente += 1
-
-    print("O número é: " + str(final))
+            soma = soma * 10
+            soma += valor
+            valor = eval(input("Escreva um dígito\n(-1 para terminar)\n? "))
+    
+    return "O número é: " + str(soma)
 
 
 numero()

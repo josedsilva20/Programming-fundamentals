@@ -11,24 +11,20 @@ Por exemplo,
 
 """
 
-def le_impares(numero):
-    elements = ()
-
-    while (numero >= 1):
-        if ((numero % 10) % 2 != 0):
-            elements += (numero % 10,)
-        numero = numero // 10
-
-    size_elements = len(elements)
+def le_impares():
     res = 0
+    numero = eval(input("Escreva um dígito: "))
+    mult = 1
 
-    for i in range (size_elements):
-        res += elements[i] * 10 ** i
 
+    while (numero > 0):
+        digito = numero % 10
+        if (digito % 2 == 1):
+            res = res + digito * mult
+            mult = mult * 10
+        numero = numero // 10
+        
     return res
 
-
-
-
-print(le_impares(eval(input("Digite o número: "))))
+print(le_impares())
 

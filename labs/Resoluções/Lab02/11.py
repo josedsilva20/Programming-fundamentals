@@ -10,25 +10,12 @@ Escreva um programa em Python que lê um número inteiro positivo e produz o nú
 
 def inverte():
     numero = eval(input("Escreva um inteiro positivo: "))
-    res = 0
-    expoente = 0
-    tuplo = ()
+    copia = 0
 
-    if numero <= 0:
-        numero = eval(input("Precis ser inteiro positivo :( -> "))
-
-
-    while numero >= 1:
-        aux = numero % 10
-        tuplo += (aux,)
-        expoente += 1
+    while (numero > 0):
+        copia = copia * 10 + numero % 10
         numero = numero // 10
+        
+    return "Resultado: " + str(copia)
 
-    for i in range (len(tuplo)):
-        expoente -= 1
-        res += tuplo[i] * 10 ** expoente
-
-
-    print("O numero invertido é: " + str(res))
-
-inverte()
+print(inverte())
