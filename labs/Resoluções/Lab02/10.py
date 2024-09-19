@@ -11,6 +11,7 @@ Por exemplo,
 
 """
 
+<<<<<<< HEAD
 def le_impares(numero):
     elements = ()
 
@@ -31,4 +32,22 @@ def le_impares(numero):
 
 
 print(le_impares(eval(input("Digite o número: "))))
+=======
+def le_impares():
+    res = 0
+    numero = eval(input("Escreva um dígito: "))
+    mult = 1
+
+
+    while (numero > 0):
+        digito = numero % 10
+        if (digito % 2 == 1):
+            res = res + digito * mult
+            mult = mult * 10
+        numero = numero // 10
+        
+    return res
+
+print(le_impares())
+>>>>>>> 172bdd43aa473327a6e083e77e9340b3dc9af8e2
 

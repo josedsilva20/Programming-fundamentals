@@ -10,6 +10,7 @@ Escreva um programa em Python que lê um número inteiro positivo e produz o nú
 
 def inverte():
     numero = eval(input("Escreva um inteiro positivo: "))
+<<<<<<< HEAD
     res = 0
     expoente = 0
     tuplo = ()
@@ -32,3 +33,14 @@ def inverte():
     print("O numero invertido é: " + str(res))
 
 inverte()
+=======
+    copia = 0
+
+    while (numero > 0):
+        copia = copia * 10 + numero % 10
+        numero = numero // 10
+        
+    return "Resultado: " + str(copia)
+
+print(inverte())
+>>>>>>> 172bdd43aa473327a6e083e77e9340b3dc9af8e2

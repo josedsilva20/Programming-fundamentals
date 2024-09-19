@@ -41,6 +41,7 @@ fornecido ao programa o inteiro $-1$. O seu programa deve permitir a interação
 
 
 def numero():
+<<<<<<< HEAD
     potencia = 0
     expoente = 0
     soma = ()
@@ -59,6 +60,17 @@ def numero():
         expoente += 1
 
     print("O número é: " + str(final))
+=======
+    soma = 0
+    valor = 0
+
+    while (valor >= 0 and valor != -1):
+            soma = soma * 10
+            soma += valor
+            valor = eval(input("Escreva um dígito\n(-1 para terminar)\n? "))
+    
+    return "O número é: " + str(soma)
+>>>>>>> 172bdd43aa473327a6e083e77e9340b3dc9af8e2
 
 
 numero()

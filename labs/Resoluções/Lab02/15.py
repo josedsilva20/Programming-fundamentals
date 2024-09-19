@@ -40,3 +40,28 @@ print(capicua(int(input("Escreva um número: \n-> "))))
 
 
 
+<<<<<<< HEAD
+=======
+#   De forma mais fácil (sem tuplos)
+
+def capicua_2():
+    numero = eval(input("Escreva um inteiro positivo: "))
+    numero_copia = numero
+    copia = 0
+
+    # Obter o inverso
+    while (numero > 0):
+        numero_copia = numero_copia * 10 + numero % 10
+        numero = numero // 10
+
+
+
+    return numero_copia
+
+
+
+print(capicua_2())
+
+
+
+>>>>>>> 172bdd43aa473327a6e083e77e9340b3dc9af8e2
