@@ -21,7 +21,9 @@ Explique este mistério.
 
 
 def misterio(numero):
-    if not (type(numero) == int and 100 <= numero <= 999. and (numero % 100 - numero % 10 >= 1)):
+    if not (type(numero) == int 
+            and 100 <= numero <= 999
+            and (numero % 100 - numero % 10 >= 1)):
         return "Condições não verificadas"
     
     n_i     =   int(str(numero)[::-1])

@@ -14,6 +14,6 @@ def area_coroa(r1, r2):
     if (r1 > r2):
         raise ValueError("Raio interior não pode ser maior que exterior")
     
-    return "Raio de r1: " + str(area_circulo(r1)) + " e r2: " + str(area_circulo(r2))
+    return "Raio de r1: " + str(area_circulo(r2) - area_circulo(r1))
 
-print (area_coroa(2, 2))
+print (area_coroa(2, 3))
