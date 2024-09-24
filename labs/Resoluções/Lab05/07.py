@@ -41,10 +41,15 @@ def valor(quantia, juro, anos):
     
     return quantia * (1 + juro) ** anos
 
-print (valor(100, 0.03, 4))
+print (valor(100, 0.05, 30))
 
 
 def duplicar(quantia, juro):
-    return round(log(2, 1 +juro))
+    i = 1 
+    
+    while (2 * quantia >= valor(quantia, juro, i)):
+        i += 1
+        
+    return i
     
 print (duplicar(100, 0.03))

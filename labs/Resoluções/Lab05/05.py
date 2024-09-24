@@ -19,9 +19,10 @@ True
 """
 
 def bissexto(ano):
-    if not((ano % 4 == 0 and ano % 100 != 0) or (ano % 4 == 0 and ano % 100 == 0 and ano % 400 == 0)):
+    if not((ano % 4 == 0 and ano % 100 != 0) or 
+           (ano % 100 == 0 and ano % 400 == 0)):
         return False
         
     return True
 
-print (bissexto(1985))
+print (bissexto(2000))
